@@ -1,0 +1,17 @@
+{
+    "rules":[
+        {
+            "tag": "A",
+            "sort": [2],
+            "percent": 100
+        }
+    ],
+    "suppliers": [
+        {
+            "tag": "ylh",
+            "adspotId": "6073382541564758",
+            "appId": "1200769033",
+            "index": 2
+        }
+    ],
+}
