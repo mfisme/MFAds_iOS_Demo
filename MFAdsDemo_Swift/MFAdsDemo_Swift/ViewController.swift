@@ -87,10 +87,9 @@ extension ViewController {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         let className: String = dataArray[indexPath.row]["targetVCName"] ?? ""
         let class_VC = classFromString(className)
-        present(class_VC, animated: true)
+        self.navigationController?.pushViewController(class_VC, animated: true);
     }
     
     func classFromString(_ className:String) -> UIViewController{

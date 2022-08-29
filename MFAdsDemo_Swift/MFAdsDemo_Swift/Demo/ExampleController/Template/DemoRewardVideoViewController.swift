@@ -16,6 +16,8 @@ class DemoRewardVideoViewController : BaseViewController,MFAdRewardVideoDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "激励视频";
+        self.isOnlyLoad = true;
+        self.isAdLoadAndShow = false;
     }
     
     override func handleClickLoadBtn() {

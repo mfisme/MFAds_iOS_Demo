@@ -19,6 +19,8 @@ class DemoInterstitialViewController : BaseViewController ,MFAdInterstitialDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "插屏广告";
+        self.isOnlyLoad = true;
+        self.isAdLoadAndShow = false;
     }
     
     override func handleClickLoadBtn() {

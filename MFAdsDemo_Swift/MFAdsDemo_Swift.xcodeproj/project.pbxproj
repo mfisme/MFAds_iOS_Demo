@@ -156,6 +156,7 @@
 				42DB3C6B284451FF00CEAC82 /* Frameworks */,
 				42DB3C6C284451FF00CEAC82 /* Resources */,
 				D2AE5C724FA41DCA33EF21EC /* [CP] Embed Pods Frameworks */,
+				D7EA8D8DB5A895248B05E059 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,6 +252,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MFAdsDemo_Swift/Pods-MFAdsDemo_Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7EA8D8DB5A895248B05E059 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MFAdsDemo_Swift/Pods-MFAdsDemo_Swift-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MFAdsDemo_Swift/Pods-MFAdsDemo_Swift-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MFAdsDemo_Swift/Pods-MFAdsDemo_Swift-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

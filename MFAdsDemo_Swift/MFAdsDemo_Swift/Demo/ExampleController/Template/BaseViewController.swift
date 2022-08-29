@@ -56,6 +56,18 @@ class BaseViewController : UIViewController {
     
     public var tempText: String = ""
     // 是否展示某些按钮
+    public var isAdLoadAndShow: Bool = false {
+      
+        didSet {
+            if !isAdLoadAndShow {
+                btnLoadAndShow.isHidden = !isAdLoadAndShow
+            }
+            print("在 didSet 中, value = \(isAdLoadAndShow), oldValue = \(oldValue)")
+        }
+    }
+    
+    
+    // 是否展示某些按钮
     public var isOnlyLoad: Bool = false {
       
         didSet {

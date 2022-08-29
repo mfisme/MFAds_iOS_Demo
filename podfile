@@ -8,8 +8,8 @@ workspace 'MFAdsDemo.xcworkspace'
 def common_pods
   pod 'Bugly'
   #国内
-#  pod 'MFAdsSDK/Adapter/CSJ' # 穿山甲(推荐)
-#  pod 'MFAdsSDK/Adapter/GDT' # 优量汇(推荐)
+  pod 'MFAdsSDK/Adapter/CSJ' # 穿山甲(推荐)
+  pod 'MFAdsSDK/Adapter/GDT' # 优量汇(推荐)
   #海外
   pod 'MFAdsSDK/Adapter/GG' # Admob(可选)
 

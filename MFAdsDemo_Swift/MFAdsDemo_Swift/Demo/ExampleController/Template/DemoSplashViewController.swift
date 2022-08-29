@@ -15,7 +15,8 @@ class DemoSplashViewController : BaseViewController,MFAdSplashDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "开屏广告";
-//        self.isOnlyLoad = false;
+        self.isOnlyLoad = true;
+        self.isAdLoadAndShow = false;
     }
     
     override func handleClickLoadAndShowBtn() {
@@ -56,7 +57,7 @@ class DemoSplashViewController : BaseViewController,MFAdSplashDelegate {
     
     // 广告数据拉取成功
     func ad_loadSuccess() {
-        self.splash.showAd();
+        self.showAd()
         self.showProcessWithText("广告加载成功")
         self.loadAdWithState(._LoadSucceed)
     }

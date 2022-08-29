@@ -32,11 +32,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidBecomeActive(_ application: UIApplication) {
         requestTracking();
     }
-
+    // 海外调试id: CClEu6baG0GPgn6i
+    // 国内调试id：ty8hTrna2PfUkvOR
     /// 初始化sdk
     func settingMFAdsSDK() {
         MFAdSdkConfig.shareInstance().level = MFAdLogLevel.debug
-        MFAdSdkConfig.shareInstance().setAppID("CClEu6baG0GPgn6i") { success in
+        MFAdSdkConfig.shareInstance().setAppID("ty8hTrna2PfUkvOR") { success in
             if !success {
                 print("初始化SDK成功")
             }
