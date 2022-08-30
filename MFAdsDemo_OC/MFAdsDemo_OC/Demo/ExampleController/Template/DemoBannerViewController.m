@@ -93,7 +93,7 @@
 #pragma mark - lazy
 - (MFAdBanner *)adBanner{
     if(!_adBanner){
-        _adBanner = [[MFAdBanner alloc] initWithAdContainer:_contentV viewController:self];
+        _adBanner = [[MFAdBanner alloc] initWithAdViewController:self];
         _adBanner.delegate = self;
     }
     return _adBanner;
