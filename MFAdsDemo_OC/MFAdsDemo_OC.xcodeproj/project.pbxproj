@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		09E6E4077CFF7CEAED7DB544 /* Pods_MFAdsDemo_OC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE35C7EAC1F94C4BACC0723C /* Pods_MFAdsDemo_OC.framework */; };
+		425904F628C88E00006BD373 /* DemoListFeedExpressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 425904F428C88E00006BD373 /* DemoListFeedExpressViewController.m */; };
 		428CBB2428B656EB008DD93F /* AppDelegate+IDFA.m in Sources */ = {isa = PBXBuildFile; fileRef = 428CBB2328B656EB008DD93F /* AppDelegate+IDFA.m */; };
 		428CBB2728B657CF008DD93F /* AppDelegate+StartPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 428CBB2628B657CF008DD93F /* AppDelegate+StartPage.m */; };
 		428CBB3228B6586E008DD93F /* TYLaunchFadeScaleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 428CBB2928B6586E008DD93F /* TYLaunchFadeScaleAnimation.m */; };
@@ -38,6 +39,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		425904F428C88E00006BD373 /* DemoListFeedExpressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoListFeedExpressViewController.m; sourceTree = "<group>"; };
+		425904F528C88E00006BD373 /* DemoListFeedExpressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoListFeedExpressViewController.h; sourceTree = "<group>"; };
 		426EAB0B2844F30E00F4DC8E /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		428CBB2228B656EB008DD93F /* AppDelegate+IDFA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+IDFA.h"; sourceTree = "<group>"; };
 		428CBB2328B656EB008DD93F /* AppDelegate+IDFA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+IDFA.m"; sourceTree = "<group>"; };
@@ -143,6 +146,8 @@
 		42D19EF928B32E110044803E /* Template */ = {
 			isa = PBXGroup;
 			children = (
+				425904F528C88E00006BD373 /* DemoListFeedExpressViewController.h */,
+				425904F428C88E00006BD373 /* DemoListFeedExpressViewController.m */,
 				428CBB3928B65A91008DD93F /* MFNavigationController.h */,
 				428CBB3A28B65A91008DD93F /* MFNavigationController.m */,
 				42D19F0528B32E110044803E /* BaseViewController.h */,
@@ -392,6 +397,7 @@
 				428CBB3228B6586E008DD93F /* TYLaunchFadeScaleAnimation.m in Sources */,
 				42DB3C5F284451D900CEAC82 /* main.m in Sources */,
 				42D19F1F28B32E110044803E /* DemoUtils.m in Sources */,
+				425904F628C88E00006BD373 /* DemoListFeedExpressViewController.m in Sources */,
 				428CBB2728B657CF008DD93F /* AppDelegate+StartPage.m in Sources */,
 				42D19F1428B32E110044803E /* DemoRewardVideoViewController.m in Sources */,
 				428CBB3428B6586E008DD93F /* UIImage+TYLaunchImage.m in Sources */,

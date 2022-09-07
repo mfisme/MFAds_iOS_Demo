@@ -34,7 +34,7 @@
         @{@"title":@"Banner", @"targetVCName": @"DemoBannerViewController"},
         @{@"title":@"插屏", @"targetVCName": @"DemoInterstitialViewController"},
         @{@"title":@"激励视频", @"targetVCName": @"DemoRewardVideoViewController"},
-//        @{@"title":@"信息流", @"targetVCName": @"DemoListFeedExpressViewController"},
+        @{@"title":@"信息流", @"targetVCName": @"DemoListFeedExpressViewController"},
 //        @{@"title":@"原生", @"targetVCName": @"DemoFullScreenVideoController"},
 //        @{@"title":@"原生banner", @"targetVCName": @"DemoFullScreenVideoController"},
         @{@"title":@"IDFA", @"targetVCName": @""},
