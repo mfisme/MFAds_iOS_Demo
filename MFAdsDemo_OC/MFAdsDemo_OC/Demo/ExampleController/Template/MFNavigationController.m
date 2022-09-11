@@ -20,11 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-    
     /* 开屏广告注意点，首先需要load 待曝光成功后进行展示show  */
-    [self.adSplash loadAd];
+//    [self.adSplash loadAd];
 }
 #pragma mark - MFAdSplashDelegate
 
@@ -41,8 +38,11 @@
 /// 广告数据拉取成功
 - (void)ad_loadSuccess {
     NSLog(@"广告数据拉取成功 %s", __func__);
-    
-    [self.adSplash showAd];
+    AppDelegate * app = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    [app removeStartPage];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t) (0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.adSplash showAd];
+    });
 }
 
 /// 广告数据拉取失败
@@ -54,8 +54,6 @@
 - (void)ad_exposured {
 
     NSLog(@"广告曝光成功 %s", __func__);
-    AppDelegate * app = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    [app removeStartPage];
 }
 
 /// 广告展示失败
@@ -87,23 +85,15 @@
 #pragma mark - lazy
 - (MFAdSplash *)adSplash{
     if(!_adSplash){
+
         _adSplash = [[MFAdSplash alloc]initWithViewController:self];
         _adSplash.delegate = self;
-        _adSplash.showLogoRequire = YES;
-        _adSplash.logoImage = [UIImage imageNamed:@"58"];
+//        _adSplash.showLogoRequire = YES;
+//        _adSplash.logoImage = [UIImage imageNamed:@"58"];
 //        _adSplash.backgroundImage = [UIImage imageNamed:@"LaunchImage_img"];
         _adSplash.timeout = 5;
     }
     return _adSplash;
 }
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

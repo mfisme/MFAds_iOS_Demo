@@ -40,7 +40,7 @@ typedef enum : NSUInteger {
 - (void)clearText;
 
 - (void)showErrorWithDescription:(NSDictionary *)description;
-- (BOOL)isDebug;
+
 @end
 
 NS_ASSUME_NONNULL_END

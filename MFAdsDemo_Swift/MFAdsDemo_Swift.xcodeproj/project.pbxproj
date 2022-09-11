@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		202AF09D68CBDFEF203650C2 /* Pods_MFAdsDemo_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69C2FF949E4FD1685C67EEC2 /* Pods_MFAdsDemo_Swift.framework */; };
+		425904F828CAD7CF006BD373 /* DemoListFeedExpressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425904F728CAD7CF006BD373 /* DemoListFeedExpressViewController.swift */; };
 		426EAB16284634AA00F4DC8E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426EAB15284634AA00F4DC8E /* BaseViewController.swift */; };
 		42B52DF1284E2D4C00F8E108 /* DemoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B52DF0284E2D4C00F8E108 /* DemoUtils.swift */; };
 		42B52DF3284E2DFD00F8E108 /* DemoBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B52DF2284E2DFD00F8E108 /* DemoBannerViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		425904F728CAD7CF006BD373 /* DemoListFeedExpressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoListFeedExpressViewController.swift; sourceTree = "<group>"; };
 		426EAB0C2844F85B00F4DC8E /* MFAdsDemo_Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MFAdsDemo_Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		426EAB15284634AA00F4DC8E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		42B52DF0284E2D4C00F8E108 /* DemoUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoUtils.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				42B52DF6284E2E0F00F8E108 /* DemoInterstitialViewController.swift */,
 				42B52DF8284E2E1800F8E108 /* DemoRewardVideoViewController.swift */,
 				42B52DFB284E2E2600F8E108 /* DemoSplashViewController.swift */,
+				425904F728CAD7CF006BD373 /* DemoListFeedExpressViewController.swift */,
 			);
 			path = Template;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				42B52DF9284E2E1800F8E108 /* DemoRewardVideoViewController.swift in Sources */,
 				42B52DFC284E2E2600F8E108 /* DemoSplashViewController.swift in Sources */,
 				42B52DF1284E2D4C00F8E108 /* DemoUtils.swift in Sources */,
+				425904F828CAD7CF006BD373 /* DemoListFeedExpressViewController.swift in Sources */,
 				426EAB16284634AA00F4DC8E /* BaseViewController.swift in Sources */,
 				42DB3C72284451FF00CEAC82 /* AppDelegate.swift in Sources */,
 				42DB3C74284451FF00CEAC82 /* SceneDelegate.swift in Sources */,

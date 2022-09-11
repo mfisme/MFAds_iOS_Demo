@@ -40,6 +40,8 @@
 - (void)settingMFAds {
     
     [MFAdSdkConfig shareInstance].level = MFAdLogLevel_Debug;
+    // 海外调试id: CClEu6baG0GPgn6i
+    // 国内调试id: ty8hTrna2PfUkvOR
     [[MFAdSdkConfig shareInstance]setAppID:@"CClEu6baG0GPgn6i" callBack:^(BOOL isSuccessful) {
         if (!isSuccessful) {
             NSLog(@"sdk initialized failed");

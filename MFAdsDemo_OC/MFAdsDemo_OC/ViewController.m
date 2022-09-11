@@ -29,14 +29,11 @@
     
     [self initSubviews];   
     _dataArr = @[
-//        @{@"title":@"自定义管理SDK", @"targetVCName": @"CustomListViewController"},
         @{@"title":@"开屏", @"targetVCName": @"DemoSplashViewController"},
         @{@"title":@"Banner", @"targetVCName": @"DemoBannerViewController"},
         @{@"title":@"插屏", @"targetVCName": @"DemoInterstitialViewController"},
         @{@"title":@"激励视频", @"targetVCName": @"DemoRewardVideoViewController"},
         @{@"title":@"信息流", @"targetVCName": @"DemoListFeedExpressViewController"},
-//        @{@"title":@"原生", @"targetVCName": @"DemoFullScreenVideoController"},
-//        @{@"title":@"原生banner", @"targetVCName": @"DemoFullScreenVideoController"},
         @{@"title":@"IDFA", @"targetVCName": @""},
     ];
     
@@ -89,10 +86,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UIViewController *vc = [[NSClassFromString(_dataArr[indexPath.row][@"targetVCName"]) alloc] init];
-//    UINavigationController * nv = [[UINavigationController alloc]initWithRootViewController:vc];
+    if(!vc) {
+        return;
+    }
     vc.title = _dataArr[indexPath.row][@"title"];
-    [self presentViewController:vc animated:YES completion:nil];
-//    [self.navigationController pushViewController:nv animated:YES];
+    [self.navigationController pushViewController:vc animated:YES];
+//    [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

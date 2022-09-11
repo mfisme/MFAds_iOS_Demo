@@ -4,4 +4,9 @@
 
 #import <MFAdsCore/MFAdSdkConfig.h>
 #import <MFAdsAdspot/MFAdSplash.h>
-//#import <MFAdsAdspot/MFAdBanner.h>
+#import <MFAdsAdspot/MFAdNativeExpress.h>
+#import <MFAdsAdspot/MFAdNativeExpressDelegate.h>
+#import <MFAdsAdspot/MFAdNativeExpressView.h>
+
+
+

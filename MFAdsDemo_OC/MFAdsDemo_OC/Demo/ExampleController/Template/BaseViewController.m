@@ -159,12 +159,6 @@
     }
 }
 
-- (BOOL)isDebug {
-    return YES;
-//    AppDelegate * d = (AppDelegate *)[UIApplication sharedApplication].delegate;
-//    return d.isDebug;
-}
-
 - (UIButton *)btnLoad {
     if (!_btnLoad) {
         _btnLoad = [UIButton buttonWithType:UIButtonTypeSystem];

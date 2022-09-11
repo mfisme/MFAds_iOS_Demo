@@ -14,7 +14,7 @@
 static NSString *startPageImageViewKey = @"startPageImageViewKey";
 static NSString *SplashTypeKey = @"SplashTypeKey";
 
-#define maxLoadingStartPageTime 10
+#define maxLoadingStartPageTime 5
 
 
 @interface AppDelegate (StartPage)

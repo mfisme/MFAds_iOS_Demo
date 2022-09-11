@@ -28,8 +28,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         ["title":"Banner", "targetVCName": "DemoBannerViewController"],
         ["title":"插屏", "targetVCName": "DemoInterstitialViewController"],
         ["title":"激励视频", "targetVCName": "DemoRewardVideoViewController"],
-//        ["title":"信息流", "targetVCName": "DemoBannerViewController"],
-//        ["title":"原生", "targetVCName": "DemoBannerViewController"],
+        ["title":"信息流", "targetVCName": "DemoListFeedExpressViewController"],
         ["title":"IDFA", "targetVCName": ""]
     ]
     

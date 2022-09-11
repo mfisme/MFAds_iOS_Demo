@@ -22,7 +22,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"开屏广告";
-    self.dic = [[AdDataJsonManager shared] loadAdDataWithType:JsonDataType_splash];
 }
 
 - (void)loadAndShowAd {
@@ -39,7 +38,7 @@
 }
 
 - (void)showAd {
-    if (!self.adSplash) {
+    if (!_adSplash) {
         [DemoUtils showToast:@"请先加载广告"];
         return;
     }
@@ -55,8 +54,11 @@
 }
 
 - (void)deallocAd {
-    self.adSplash = nil;
-    self.adSplash.delegate = nil;
+    if (!_adSplash) {
+        return;
+    }
+    _adSplash.delegate = nil;
+    _adSplash = nil;
 }
 #pragma mark - MFAdSplashDelegate
 
@@ -130,7 +132,8 @@
 #pragma mark - lazy
 - (MFAdSplash *)adSplash{
     if(!_adSplash){
-        _adSplash = [[MFAdSplash alloc]initWithViewController:self];
+        AppDelegate * app = (AppDelegate *)[UIApplication sharedApplication].delegate;
+        _adSplash = [[MFAdSplash alloc]initWithViewController:app.window.rootViewController];
         _adSplash.delegate = self;
 //        _adSplash.showLogoRequire = YES;
 //        _adSplash.logoImage = [UIImage imageNamed:@"58"];
