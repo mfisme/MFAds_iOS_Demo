@@ -42,11 +42,14 @@
     [MFAdSdkConfig shareInstance].level = MFAdLogLevel_Debug;
     // 海外调试id: CClEu6baG0GPgn6i
     // 国内调试id: ty8hTrna2PfUkvOR
-    [[MFAdSdkConfig shareInstance]setAppID:@"CClEu6baG0GPgn6i" callBack:^(BOOL isSuccessful) {
-        if (!isSuccessful) {
-            NSLog(@"sdk initialized failed");
-        }
-    }];
+    [[MFAdSdkConfig shareInstance]registerAppID:@"ty8hTrna2PfUkvOR" withConfig:nil];
+    
+    
+//    [[MFAdSdkConfig shareInstance]setAppID:@"CClEu6baG0GPgn6i" callBack:^(BOOL isSuccessful) {
+//        if (!isSuccessful) {
+//            NSLog(@"sdk initialized failed");
+//        }
+//    }];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
